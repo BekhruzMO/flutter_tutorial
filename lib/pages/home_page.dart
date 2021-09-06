@@ -48,7 +48,7 @@ bool bl = false;
                 children: [
                   ClipRRect(
                       borderRadius: BorderRadius.circular(20),
-                      child:Image(image: AssetImage('assets/images/fl2.png'),
+                      child:Image(image: AssetImage('assets/images/dart.png'),
                         width: 40,
                         height: 40,
                         fit: BoxFit.cover,
@@ -85,7 +85,7 @@ bool bl = false;
               ),
 
               onPressed: (){
-                Navigator.pushNamed(context, PageViewPage.id);
+                Navigator.pushReplacementNamed(context, PageViewPage.id);
               },
 
               child: Row(
@@ -93,7 +93,7 @@ bool bl = false;
                 children: [
                   ClipRRect(
                       borderRadius: BorderRadius.circular(20),
-                      child:Image(image: AssetImage('assets/images/fl2.png'),
+                      child:Image(image: AssetImage('assets/images/flutter4.png'),
                         width: 40,
                         height: 40,
                         fit: BoxFit.cover,

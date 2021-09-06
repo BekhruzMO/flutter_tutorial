@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/container_page.dart';
 import 'package:flutter_tutorial/pages/drawer_page.dart';
+import 'package:flutter_tutorial/pages/gesture_detector.dart';
 import 'package:flutter_tutorial/pages/home_page.dart';
 import 'package:flutter_tutorial/pages/list_view.dart';
 import 'package:flutter_tutorial/pages/page_view.dart';
@@ -19,14 +20,15 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: GestureDetectorPage(),
 
       routes: {
         HomePage.id:(context)=>HomePage(),
         DrawerPage.id:(context)=>DrawerPage(),
         ListViewPage.id:(context)=>ListViewPage(),
         PageViewPage.id:(context)=>PageViewPage(),
-        ContainerPage.id:(context) => ContainerPage()
+        ContainerPage.id:(context) => ContainerPage(),
+        GestureDetectorPage.id:(context)=>GestureDetectorPage()
 
       },
     );

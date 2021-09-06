@@ -81,7 +81,7 @@ class _PageViewPageState extends State<PageViewPage> {
             ),
             TextButton(
               onPressed: (){
-                Navigator.pushNamed(context, HomePage.id);
+                Navigator.pushReplacementNamed(context, HomePage.id);
               },
 
               child:Container(
