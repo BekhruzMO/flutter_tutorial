@@ -76,7 +76,7 @@ bool bl = false;
                 ],
               ),
             ),
-            SizedBox(height: 40,),
+            SizedBox(height: 35,),
             MaterialButton(
               padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
               color: Colors.blue,
