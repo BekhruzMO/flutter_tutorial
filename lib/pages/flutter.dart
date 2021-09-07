@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/pages/align_page.dart';
 import 'package:flutter_tutorial/pages/container_page.dart';
 import 'package:flutter_tutorial/pages/drawer_page.dart';
 import 'package:flutter_tutorial/pages/gesture_detector.dart';
 import 'package:flutter_tutorial/pages/page_view.dart';
+import 'package:flutter_tutorial/pages/textFormField.dart';
 import 'package:flutter_tutorial/pages/textfield_page.dart';
 
 class FlutterPage extends StatefulWidget {
@@ -261,7 +263,95 @@ class _FlutterPageState extends State<FlutterPage> {
               ],
             ),
           ),
-          TextButton(onPressed:(){}, child: Text('Click'))
+          SizedBox(height: 35,),
+          MaterialButton(
+            padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
+            color: Colors.blue,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(40)
+            ),
+
+            onPressed: (){
+              Navigator.pushNamed(context, TextFormFieldPage.id);
+            },
+
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                ClipRRect(
+                    borderRadius: BorderRadius.circular(20),
+                    child:Image(image: AssetImage('assets/images/flutter4.png'),
+                      width: 40,
+                      height: 40,
+                      fit: BoxFit.cover,
+                    )
+                ) ,
+                SizedBox(width: 20,),
+                Container(
+                  margin: EdgeInsets.all(0),
+                  padding: EdgeInsets.fromLTRB(20, 12, 20, 12),
+                  decoration:BoxDecoration(
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(40),
+                          topRight: Radius.circular(25),
+                          bottomLeft: Radius.circular(0),
+                          bottomRight: Radius.circular(25) ),
+                      color: Colors.white
+                  ),
+                  child:
+                  Text('TextFormField',
+                    style: TextStyle(
+                        color: Colors.blue,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24),),)
+              ],
+            ),
+          ),
+          SizedBox(height: 35,),
+          MaterialButton(
+            padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
+            color: Colors.blue,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(40)
+            ),
+
+            onPressed: (){
+              Navigator.pushNamed(context, AlignPage.id);
+            },
+
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                ClipRRect(
+                    borderRadius: BorderRadius.circular(20),
+                    child:Image(image: AssetImage('assets/images/flutter4.png'),
+                      width: 40,
+                      height: 40,
+                      fit: BoxFit.cover,
+                    )
+                ) ,
+                SizedBox(width: 20,),
+                Container(
+                  margin: EdgeInsets.all(0),
+                  padding: EdgeInsets.fromLTRB(20, 12, 20, 12),
+                  decoration:BoxDecoration(
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(40),
+                          topRight: Radius.circular(25),
+                          bottomLeft: Radius.circular(0),
+                          bottomRight: Radius.circular(25) ),
+                      color: Colors.white
+                  ),
+                  child:
+                  Text('Align',
+                    style: TextStyle(
+                        color: Colors.blue,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24),),)
+              ],
+            ),
+          ),
+
         ],
 
 

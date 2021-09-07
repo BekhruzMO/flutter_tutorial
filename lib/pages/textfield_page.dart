@@ -48,6 +48,25 @@ class _TextFieldPageState extends State<TextFieldPage> {
 
                   )),
             ),
+            SizedBox(width: 20,),
+            TextField(
+              decoration: InputDecoration(
+                icon: Icon(Icons.padding),
+                prefixIcon: Icon(Icons.person,color: Colors.grey,size: 32,),
+                hintText: 'Name',
+                labelText: 'label',
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(50),
+                  borderSide: BorderSide(width: 20, color: Colors.lightGreenAccent),
+                  //gapPadding: 20,
+
+                )
+
+                )
+
+              ),
+
+
             Image(image: AssetImage('assets/images/textField.png'),),
           ],
         ),
