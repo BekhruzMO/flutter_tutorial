@@ -81,7 +81,8 @@ class _PageViewPageState extends State<PageViewPage> {
             ),
             TextButton(
               onPressed: (){
-                Navigator.pushReplacementNamed(context, HomePage.id);
+                Navigator.pushNamedAndRemoveUntil(context, HomePage.id, (route) => false);
+               // Navigator.pop(context);
               },
 
               child:Container(

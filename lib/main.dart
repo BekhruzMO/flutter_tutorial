@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/container_page.dart';
 import 'package:flutter_tutorial/pages/drawer_page.dart';
+import 'package:flutter_tutorial/pages/flutter.dart';
 import 'package:flutter_tutorial/pages/gesture_detector.dart';
 import 'package:flutter_tutorial/pages/home_page.dart';
 import 'package:flutter_tutorial/pages/list_view.dart';
 import 'package:flutter_tutorial/pages/page_view.dart';
+import 'package:flutter_tutorial/pages/textfield_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: GestureDetectorPage(),
+      home: HomePage(),
 
       routes: {
         HomePage.id:(context)=>HomePage(),
@@ -28,7 +30,9 @@ class MyApp extends StatelessWidget {
         ListViewPage.id:(context)=>ListViewPage(),
         PageViewPage.id:(context)=>PageViewPage(),
         ContainerPage.id:(context) => ContainerPage(),
-        GestureDetectorPage.id:(context)=>GestureDetectorPage()
+        GestureDetectorPage.id:(context)=>GestureDetectorPage(),
+        TextFieldPage.id:(context)=>TextFieldPage(),
+        FlutterPage.id:(context)=>FlutterPage()
 
       },
     );

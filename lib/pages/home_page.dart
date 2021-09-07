@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/pages/page_view.dart';
+import 'package:flutter_tutorial/pages/flutter.dart';
 
 class HomePage extends StatefulWidget {
 
@@ -85,7 +85,7 @@ bool bl = false;
               ),
 
               onPressed: (){
-                Navigator.pushReplacementNamed(context, PageViewPage.id);
+                Navigator.pushNamed(context, FlutterPage.id);
               },
 
               child: Row(
