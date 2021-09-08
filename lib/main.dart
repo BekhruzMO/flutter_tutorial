@@ -7,6 +7,7 @@ import 'package:flutter_tutorial/pages/gesture_detector.dart';
 import 'package:flutter_tutorial/pages/home_page.dart';
 import 'package:flutter_tutorial/pages/list_view.dart';
 import 'package:flutter_tutorial/pages/page_view.dart';
+import 'package:flutter_tutorial/pages/sign_up_page.dart';
 import 'package:flutter_tutorial/pages/textFormField.dart';
 import 'package:flutter_tutorial/pages/textfield_page.dart';
 
@@ -36,7 +37,8 @@ class MyApp extends StatelessWidget {
         TextFieldPage.id:(context)=>TextFieldPage(),
         FlutterPage.id:(context)=>FlutterPage(),
         TextFormFieldPage.id:(context) =>TextFormFieldPage(),
-        AlignPage.id:(context) => AlignPage()
+        AlignPage.id:(context) => AlignPage(),
+        SignUpPage.id:(context)=>SignUpPage()
 
       },
     );
